@@ -68,7 +68,7 @@ namespace ConsultorioMedico
                     case 1: //Se insertara un paciente, su edad y prioridad seran generadas al azar durante el proceso
                         guachiman.insertaren(filaadultos, filapediatria);
                         break;
-                    case 2: //Se atendera a una cola de niño o a una de adultos al azar
+                    case 2: //Se atendera a una cola de niños o a una de adultos al azar
                         if (guachiman.Seudob() == 1)
                             medico.Atendera(filaadultos);
                         else

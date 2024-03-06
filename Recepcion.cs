@@ -11,6 +11,7 @@ namespace ConsultorioMedico
     {
         //Atributos
         Random akinator = new Random();
+        string[] prioridades = { "Accidente Aparatoso", "Infarto", "Afeccion Respiratoria", "Parto", "No es urgente" };
         //Constructor
         public Recepcion()
         {
@@ -111,7 +112,7 @@ namespace ConsultorioMedico
             Console.WriteLine("");
             Console.Write("Edad: " + pac.getedad());
             Console.WriteLine("");
-            Console.Write("Prioridad: " + pac.getprioridad());
+            Console.Write("Prioridad: " + pac.getprioridad() + " (" + prioridades[pac.getprioridad()] + ")");
             Console.WriteLine();
             fila[pac.getprioridad()].Encolar(pac);
         }
